@@ -1,0 +1,83 @@
+.keys{
+    display: flex;
+min-height:100vh;
+align-items: center;
+justify-content: center;
+background-size:cover;
+background-color: transparent;
+background-image: url("/img/fondo.jpg");
+}
+
+
+
+.key{
+    border: 4px solid black;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 0.07s;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 4);
+    text-shadow: 0 0 5px black;
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
+kbd {
+    display: block;
+    font-size: 40px;
+}
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#ffc600;
+}
+/*----------------Reloj------------*/
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid rgba(15, 0, 0, 0.452);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0px 4px rgba(0, 0, 0, 1),
+        inset 0 0 0 3px #ffffff,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 2);
+    background-size:cover;
+    background-color: rgba(255, 255, 255, 0);
+    }
+
+.all__clock{
+    background-size:cover;
+    background-color: transparent;
+    background-image: url("/img/fondo.jpg");
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width:50%;
+    height: 6px;
+    background: rgba(255, 94, 0, 0.527);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
