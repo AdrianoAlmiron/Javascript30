@@ -1,3 +1,21 @@
+:root{
+    --base:#ffc600;
+    --spacing: 5px;
+    --blur: 10px;
+    --gray: 10px;
+    --contraste: 10px;
+}
+
+body {
+    text-align: center;
+    background: #111111;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
 .keys{
     display: flex;
 min-height:100vh;
@@ -80,4 +98,39 @@ kbd {
     transform: rotate(90deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+/*------------------------clase 3 --------*/
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: grayscale(var(--gray)) blur(var(--blur)) contrast(var(--contrast));
+    
+    width: 400px;
+}
+
+.h1{
+    color: var(--base);
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+a{
+    color: var(--base);
+    text-decoration: none;
+}
+
+input{
+    width: 80px;
+}
+
+.img__list{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
 }
