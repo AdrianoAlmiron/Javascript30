@@ -8,6 +8,51 @@
     <title>Praticas de js</title>
 </head>
 <body>
+
+    <div class="panels">
+        <div class="panel panel1">
+            <p>Hey</p>
+            <p>Es</p>
+            <p>hora</p>
+        </div>
+        <div class="panel panel2">
+            <p>no vez la</p>
+            <p>Hora</p>
+            <p>de viajar</p>
+        </div>
+        <div class="panel panel3">
+            <p>cansado</p>
+            <p>DE</p>
+            <p>trabajar</p>
+        </div>
+        <div class="panel panel4">
+            <p>tiene que </p>
+            <p>Viajar</p>
+            <p>solo hazlo</p>
+        </div>
+        <div class="panel panel5">
+            <p>ven</p>
+            <p>a peru</p>
+            <p>y diviertete</p>
+        </div>
+
+    <script>
+        const panels = document.querySelectorAll('.panel');
+
+        function toggleOpen(){
+            this.classList.toggle('open');
+        }
+
+        function toggleActive(e){
+            if(e.propertyName.includes('flex-grow')){
+                this.classList.toggle('open-active'); 
+            }
+        }
+        panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+        panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    </script>
+
+    </div>
         <h2>Galeria <span class="h1">Edicion</span></h2>
         <div class="controls">
             <label for="spacing">Spacing:</label>
